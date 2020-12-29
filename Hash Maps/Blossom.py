@@ -21,8 +21,7 @@ class HashMap:
         for item in list_at_array:
             if key == item[0]:
                 item[1] = value
-            else:
-                list_at_array.insert(payload)
+        list_at_array.insert(payload)
 
 
     def retrieve(self,key):
@@ -40,8 +39,8 @@ blossom = HashMap(len(flower_definitions))
 for flower in flower_definitions:
     blossom.assign(flower[0], flower[1])
 
-#print(blossom.retrieve('daisy'))
-print(blossom.array)
+print(blossom.retrieve('daisy'))
+#print(blossom.array)
 
 
 
